@@ -8,7 +8,6 @@ def calculate_trust(ai_res, reeval_res, bias_res):
     scores = []
     current_trust = 95
     
-    # Stage 1: Initial AI Output
     timeline_events.append("Initial Evaluation")
     scores.append(current_trust)
     
@@ -20,7 +19,6 @@ def calculate_trust(ai_res, reeval_res, bias_res):
         timeline_events.append("Self-Doubt Check (Passed)")
     scores.append(current_trust)
     
-    # Stage 3: Bias Check
     if bias_res["is_biased"]:
         current_trust -= (bias_res["bias_score"] // 2)
         timeline_events.append("Bias Check (Failed)")
