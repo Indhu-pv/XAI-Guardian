@@ -25,7 +25,6 @@ def main():
     page = st.sidebar.radio("Navigation", ["Main Dashboard", "Decision Analysis", "Insights & Visualizations"])
     st.sidebar.divider()
     
-    # Global Settings
     st.sidebar.subheader("Global Constraints")
     high_comp_mode = st.sidebar.toggle("🔥 High Competition Mode", value=False)
     explain_like_human = st.sidebar.toggle("🗣️ Explain Like Human", value=True)
