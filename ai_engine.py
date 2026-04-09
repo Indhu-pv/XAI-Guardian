@@ -12,7 +12,7 @@ def evaluate_candidate(candidate, high_comp_mode=False):
     # High competition mode makes the AI stricter
     threshold = 85 if high_comp_mode else 75
     if high_comp_mode:
-        score -= 5  # general penalty under stress
+        score -= 5 
         
     score = min(max(int(score), 0), 100)
     
