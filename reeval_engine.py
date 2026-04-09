@@ -6,18 +6,15 @@ def reevaluate(candidate, initial_result, high_comp_mode=False):
     to see if its initial decision might be brittle.
     """
     
-    # Simulate the AI questioning itself by introducing a slight boost to communication 
-    # to see if it flips a marginal rejection.
     perturbed_candidate = candidate.copy()
-    
-    # "What if communication compensates for a slightly lower coding score?"
+
     if candidate["communication"] > 85:
         perturbed_candidate["coding_score"] += 5
         
-    # Run through the strict AI again with perturbed data
+
     second_pass_result = evaluate_candidate(perturbed_candidate, high_comp_mode)
     
-    # Determine inconsistency
+  
     inconsistency_detected = initial_result["decision"] != second_pass_result["decision"]
     
     reasons = []
