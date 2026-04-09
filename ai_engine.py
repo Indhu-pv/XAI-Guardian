@@ -6,10 +6,8 @@ def evaluate_candidate(candidate, high_comp_mode=False):
     coding_weight = 0.65
     exp_weight = 2.5  # Each year of experience = 2.5 points
     
-    # Calculate base score out of 100
     score = (candidate["coding_score"] * coding_weight) + (candidate["experience"] * exp_weight)
-    
-    # High competition mode makes the AI stricter
+
     threshold = 85 if high_comp_mode else 75
     if high_comp_mode:
         score -= 5 

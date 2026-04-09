@@ -4,7 +4,6 @@ def human_evaluate(candidate, explain_like_human=True):
     Values a balance of technical and soft skills.
     """
     
-    # Human balances the weights more evenly
     human_score = (candidate["coding_score"] * 0.4) + (candidate["communication"] * 0.4) + (candidate["experience"] * 2)
     threshold = 70
     
