@@ -1,0 +1,20 @@
+# Python virtual environment
+venv/
+env/
+ENV/
+
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Installed packages (just in case)
+*.egg-info/
+dist/
+build/
+
+# IDE / OS noise
+.vscode/
+.idea/
+.DS_Store
