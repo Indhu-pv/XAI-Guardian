@@ -1,20 +1,21 @@
-# Python virtual environment
+# Virtual environments
 venv/
+myenv/
 env/
 ENV/
 
-# Python cache files
+# Python cache
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
 
-# Installed packages (just in case)
-*.egg-info/
-dist/
+# Build / packaging
 build/
+dist/
+*.egg-info/
 
-# IDE / OS noise
+# IDE / OS
 .vscode/
 .idea/
 .DS_Store
