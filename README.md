@@ -46,5 +46,4 @@ This system simulates a high-stakes AI evaluating a candidate profile but introd
    ```bash
    streamlit run app.py
    ```
-4. Open the localhost link generated in the terminal to view the dashboard!
->>>>>>> 3129cf3947e94ffbaffb1c0522fe49c78a5ce036
+
